@@ -145,3 +145,7 @@ fieldset.open label.fv.extra { display: flex; }
 ul.also { padding-left: 1.1rem; }
 ul.also li { margin: 6px 0; }
 .compiler { background: var(--chip); color: var(--chip-ink); border-radius: 10px; padding: 2px 18px; margin: 1.2rem 0; font-size: 1.05rem; }
+
+/* report a link problem */
+p.report { margin: .2rem 0 .6rem; font-size: .9rem; }
+p.report a { font-weight: 600; }

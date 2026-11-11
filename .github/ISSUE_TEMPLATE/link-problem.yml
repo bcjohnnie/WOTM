@@ -1,0 +1,50 @@
+name: Report a broken or hijacked link
+description: Flag a link on the Legal Website of the Month site that is broken, hijacked, parked or leads to the wrong resource.
+title: "Link problem: "
+labels: ["link-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Every link on the site was checked when it was published; reports are re-checked before the next release.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry ID
+      description: The pick's ID, for example 2003-10. Filled in when you use the button on a pick's page.
+  - type: input
+    id: url
+    attributes:
+      label: Which link is the problem?
+      description: Paste its address, or keep the one filled in.
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - Broken (error page, not found, or does not load)
+        - Hijacked (spam, gambling, adult or unrelated content)
+        - Parked or for sale
+        - Leads to a different resource from the one described
+        - Login, paywall or bot check
+        - The archived copy (Wayback Machine) does not work
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details (optional)
+      description: What you saw, and a better address if you know one.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links on this pick's page
+      description: Filled in automatically.
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Filled in automatically.
