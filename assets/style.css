@@ -132,3 +132,16 @@ fieldset.open label.fv.extra { display: flex; }
   #sf { flex-wrap: wrap; }
   #sf input { flex-basis: 100%; }
 }
+
+/* About: people behind the series */
+.people { margin-top: 1.5rem; }
+.persons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 1rem 0 1.4rem; }
+@media (max-width: 600px) { .persons { grid-template-columns: 1fr; } }
+.person { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 10px; padding: 4px 16px 10px; }
+.person h3 { font-family: var(--serif); font-size: 1.25rem; margin: .7em 0 .1em; }
+.person p { margin: .35em 0; }
+.person .inst { font-weight: 600; }
+.person .span { color: var(--accent); font-weight: 600; font-variant-numeric: tabular-nums; }
+ul.also { padding-left: 1.1rem; }
+ul.also li { margin: 6px 0; }
+.compiler { background: var(--chip); color: var(--chip-ink); border-radius: 10px; padding: 2px 18px; margin: 1.2rem 0; font-size: 1.05rem; }
