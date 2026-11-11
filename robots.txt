@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bcjohnnie.github.io/WOTM/sitemap.xml
